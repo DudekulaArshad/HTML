@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lovely Professional School</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+      color:#333;
+    }
+
+    header{
+      background:#002147;
+      color:white;
+      padding:15px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header h1{
+      font-size:28px;
+    }
+
+    nav ul{
+      list-style:none;
+      display:flex;
+      gap:20px;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      font-size:18px;
+    }
+
+    .hero{
+      height:90vh;
+      background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+      url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero h2{
+      font-size:55px;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:22px;
+      margin-bottom:25px;
+    }
+
+    .hero button{
+      padding:12px 30px;
+      border:none;
+      background:#ff9800;
+      color:white;
+      font-size:18px;
+      border-radius:5px;
+      cursor:pointer;
+    }
+
+    section{
+      padding:60px 20px;
+      text-align:center;
+    }
+
+    .about p{
+      max-width:800px;
+      margin:auto;
+      margin-top:20px;
+      font-size:18px;
+      line-height:1.6;
+    }
+
+    .courses-container{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+      margin-top:40px;
+    }
+
+    .course-card{
+      background:white;
+      width:280px;
+      padding:25px;
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .course-card:hover{
+      transform:translateY(-10px);
+    }
+
+    .gallery-container{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+      margin-top:30px;
+    }
+
+    .gallery-container img{
+      width:300px;
+      border-radius:10px;
+    }
+
+    form{
+      width:350px;
+      margin:auto;
+      display:flex;
+      flex-direction:column;
+      gap:15px;
+      margin-top:30px;
+    }
+
+    form input,
+    form textarea{
+      padding:12px;
+      border:1px solid #ccc;
+      border-radius:5px;
+    }
+
+    form button{
+      padding:12px;
+      border:none;
+      background:#002147;
+      color:white;
+      font-size:18px;
+      border-radius:5px;
+      cursor:pointer;
+    }
+
+    footer{
+      background:#002147;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:30px;
+    }
+
+    @media(max-width:768px){
+
+      header{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      nav ul{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .hero h2{
+        font-size:35px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <h1>Lovely Professional School</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <section class="hero" id="home">
+
+    <h2>Welcome to Lovely Professional School</h2>
+
+    <p>Learning Today For A Better Tomorrow</p>
+
+    <button onclick="showMessage()">Explore More</button>
+
+  </section>
+
+  <section class="about" id="about">
+
+    <h2>About Our School</h2>
+
+    <p>
+      Lovely Professional School provides excellent education,
+      modern classrooms, smart learning facilities, sports activities,
+      and experienced teachers for student success.
+    </p>
+
+  </section>
+
+  <section id="courses">
+
+    <h2>Our Courses</h2>
+
+    <div class="courses-container">
+
+      <div class="course-card">
+        <h3>Science</h3>
+        <p>Physics, Chemistry, Biology and Mathematics.</p>
+      </div>
+
+      <div class="course-card">
+        <h3>Commerce</h3>
+        <p>Economics, Business Studies and Accountancy.</p>
+      </div>
+
+      <div class="course-card">
+        <h3>Arts</h3>
+        <p>History, Literature and Political Science.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="gallery">
+
+    <h2>School Gallery</h2>
+
+    <div class="gallery-container">
+
+      <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=600" alt="School Image">
+
+      <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=600" alt="Library">
+
+      <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=600" alt="Students">
+
+    </div>
+
+  </section>
+
+  <section id="contact">
+
+    <h2>Contact Us</h2>
+
+    <form onsubmit="submitForm(event)">
+
+      <input type="text" placeholder="Enter Your Name" required>
+
+      <input type="email" placeholder="Enter Your Email" required>
+
+      <textarea rows="5" placeholder="Enter Message"></textarea>
+
+      <button type="submit">Submit</button>
+
+    </form>
+
+  </section>
+
+  <footer>
+
+    <p>© 2026 Lovely Professional School | All Rights Reserved</p>
+
+  </footer>
+
+  <script>
+
+    function showMessage(){
+      alert("Welcome to Lovely Professional School!");
+    }
+
+    function submitForm(event){
+      event.preventDefault();
+      alert("Form Submitted Successfully!");
+    }
+
+  </script>
+
+</body>
+</html>
